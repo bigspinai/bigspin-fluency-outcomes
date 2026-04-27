@@ -1,0 +1,26 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+hline{2}={1-2}{solid, black, 0.05em},
+hline{8}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{12}={1-2}{solid, black, 0.08em},
+column{2}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Model 1 \\
+(Intercept) & \num{2.087} & \num{0.118} & *** \\
+ann\{fluency\} & \num{0.111} & \num{0.041} & ** \\
+ann\{n\_turns\} & \num{-0.236} & \num{0.009} & *** \\
+ann\{complexity\_score\} & \num{-0.517} & \num{0.021} & *** \\
+ann\{fluency\_behavior\_count\} & \num{-0.005} & \num{0.020} & \\
+SD (Intercept domains) & \num{0.475} &  & \\
+Num.Obs. & \num{20969} \\
+R2 Marg. & \num{0.176} \\
+R2 Cond. & \num{0.229} \\
+RMSE & \num{0.43} \\
+\end{tblr}
+\end{table}
